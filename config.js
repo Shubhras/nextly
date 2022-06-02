@@ -4,9 +4,9 @@ const jsonConfig = {
     //API_URL: "https://backend.nextly.shop",
     //WEBSITE_URL: "https://nextly.shop",
     //IMG_URL: "https://backend.nextly.shop",
-    API_URL: "http://localhost:5000",
-    WEBSITE_URL: "http://localhost:8001",
-    IMG_URL: "http://localhost:5000",
+    API_URL: "http://139.59.83.155:5000",
+    WEBSITE_URL: "http://139.59.83.155:8001",
+    IMG_URL: "http://139.59.83.155:5000",
 
     maillerConfig: {
         // host: 'smtp.gmail.com',
@@ -45,9 +45,9 @@ const jsonConfig = {
 }
 
 if (process.env.NODE_ENV == 'development') {
-    jsonConfig.API_URL = "http://localhost:5000"
-    jsonConfig.WEBSITE_URL = "http://localhost:8001"
-    jsonConfig.IMG_URL = "http://localhost:5000"
+    jsonConfig.API_URL = "http://139.59.83.155:5000"
+    jsonConfig.WEBSITE_URL = "http://139.59.83.155:8001"
+    jsonConfig.IMG_URL = "http://139.59.83.155:5000"
 }
 
 
