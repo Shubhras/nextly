@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ozgurmuraterhan/nextly.git"
+    "url": "git+https://github.com/Shubhras/nextly.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ozgurmuraterhan/nextly/issues"
+    "url": "https://github.com/Shubhras/nextly/issues"
   },
-  "homepage": "https://github.com/ozgurmuraterhan/nextly#readme"
+  "homepage": "https://github.com/Shubhras/nextly#readme"
 }
