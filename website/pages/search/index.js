@@ -59,9 +59,9 @@ const Page = () => {
                </div>
                <TextFilter />
                <span className="font-cat">
-               <CategoriesFilter />
-               <PriceFilter />
-               <BrandsFilter />
+                  <CategoriesFilter />
+                  <PriceFilter />
+                  <BrandsFilter />
                </span>
                <div
                   className="float-right w-full p-2 cursor-pointer  md:hidden block text-center bg-black text-white mt-10"
@@ -80,7 +80,7 @@ const Page = () => {
               Open Filter <FilterOutlined />
                   </button>
                </div>
-                <div className="w-6/12 md:w-2/12 pr-5 float-left mt-4">
+               <div className="w-6/12 md:w-2/12 pr-5 float-left mt-4">
                   <FilterSelectedTop />
                </div>
                <div className="w-6/12 mt-9 md:w-3/12 pr-5 float-right">

@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import HomeSeccoundBoxs from '../app/components/HomePage/HomeSeccoundBoxs';
+//import HomeSeccoundBoxs from '../app/components/HomePage/HomeSeccoundBoxs';
 // const HomeFirstBox = dynamic(() => import("../app/components/Home/HomeFirstBox"));
 // const HomeSeccoundBoxs = dynamic(() => import("../app/components/Home/HomeSeccoundBoxs"));
 // const HomeOfferList = dynamic(() => import("../app/components/Home/HomeOfferList"));
@@ -17,7 +17,7 @@ import HomeSeccoundBoxs from '../app/components/HomePage/HomeSeccoundBoxs';
 // const HomeSlider = dynamic(() => import("../app/components/Home/HomeSlider"));
 
 
-const HomeFirstBox = dynamic(() => import("../app/components/HomePage/HomeFirstBox"));
+//const HomeFirstBox = dynamic(() => import("../app/components/HomePage/HomeFirstBox"));
 //const HomeSeccoundBoxs = dynamic(() => import("../app/components/HomePage/HomeSeccoundBoxs"));
 const HomeOfferList = dynamic(() => import("../app/components/HomePage/HomeOfferList"));
 const HomeProductsFirst = dynamic(() => import("../app/components/HomePage/HomeProductsFirst"));
@@ -28,7 +28,7 @@ const Head = dynamic(() => import("../app/core/Head"));
 const homePage = ({
    resData = [],
    resProductFirst = [],
-   resProductSeccond = [],
+   //resProductSeccond = [],
 }) => {
 
 
@@ -36,10 +36,10 @@ const homePage = ({
       resData,
       "61535837020a748d51968ecc"
    );
-   const homeFirstBox = func.getCategoriesTree(
-      resData,
-      "61537c2d6464c09286494c63"
-   );
+   // const homeFirstBox = func.getCategoriesTree(
+   //    resData,
+   //    "61537c2d6464c09286494c63"
+   // );
    const homeOfferList = func.getCategoriesTree(
       resData,
       "6154640f79053f941d1b76c9"
@@ -59,7 +59,7 @@ const homePage = ({
          <HomeSlider state={homeSlider} />
          <HomeOfferList state={homeOfferList} title={homeOfferListtitle} />
          <div className="text-center">
-           <h4>Collection Highlight</h4>
+            <h4>Collection Highlight</h4>
          </div>
          <div className="text-center mt-5">
             <Button>VIEW ALL </Button>
@@ -73,7 +73,7 @@ const homePage = ({
          />
          <HomeOfferList state={homeOfferList} title={homeOfferListtitle} />
          <div className="text-center">
-           <h4>Celebrity Closet</h4>
+            <h4>Celebrity Closet</h4>
          </div>
          <div className="text-center mt-5">
             <Button>VIEW ALL </Button>
@@ -84,8 +84,7 @@ const homePage = ({
                title: "",
                description: "",
             }}
-         />
-          {/*<HomeFirstBox state={homeFirstBox} />
+         />{/*<HomeFirstBox state={homeFirstBox} />
           <HomeSeccoundBoxs
             state={resProductSeccond}
             title={{
