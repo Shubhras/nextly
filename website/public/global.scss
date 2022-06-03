@@ -15,7 +15,7 @@
     background-color: #fff;
     @apply antialiased;
     font-family: 'Crimson-Text';
-    
+
   }
 
   .svg-path
@@ -25,7 +25,7 @@ fill: none !important;
     stroke: currentColor !important;
     stroke-linecap: miter;
     stroke-linejoin:miter;
-    
+
   }
   .header-icon
   {
@@ -78,14 +78,14 @@ fill: none !important;
 width: 5px;
 }
   ::-webkit-scrollbar-track {
-box-shadow: inset 0 0 5px grey; 
+box-shadow: inset 0 0 5px grey;
 }
 ::-webkit-scrollbar-thumb {
-background:#757575; 
+background:#757575;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background:rgb(54, 56, 58); 
+background:rgb(54, 56, 58);
 }
 
 
@@ -160,7 +160,7 @@ li .ant-menu-submenu-title .ant-menu-title-content {
     width: 47.2%!important;
     }
     }
-    
+
    @media (min-width: 2400px) and (max-width: 2600px) {
     .width-offer-list
     {
@@ -171,12 +171,12 @@ li .ant-menu-submenu-title .ant-menu-title-content {
 
 .brand-slider
 {
- @media only screen and (min-width: 769px) 
+ @media only screen and (min-width: 769px)
  {
   .brands-display
    {
     display: none!important;
-   } 
+   }
  }
 }
 
@@ -202,8 +202,8 @@ li .ant-menu-submenu-title .ant-menu-title-content {
      background:  transparent;
      margin-right: 15px;
     }
-   
- .ant-select:not(.ant-select-customize-input) .ant-select-selector 
+
+ .ant-select:not(.ant-select-customize-input) .ant-select-selector
   {
     position: relative;
     background-color: #fff;
@@ -211,7 +211,7 @@ li .ant-menu-submenu-title .ant-menu-title-content {
     border-radius: 0px;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
    }
-    span.ant-select-selection-placeholder 
+    span.ant-select-selection-placeholder
   {
     COLOR: #333;
   }
@@ -219,23 +219,23 @@ li .ant-menu-submenu-title .ant-menu-title-content {
   {
    background-color: #000;
     color: #fff;
-    height: 45px;
+    height: 30px;
   }
-  .announcement-link-text 
+  .announcement-link-text
   {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: .5px;
     font-family: 'Crimson-Text';
   }
-   .announcement-text 
+   .announcement-text
   {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.85em;
   }
-   .announc-margin 
+   .announc-margin
   {
     margin-left: 550px;
   }
@@ -244,11 +244,11 @@ li .ant-menu-submenu-title .ant-menu-title-content {
 }
 .site-nav__icons {
     float: left;
-    margin-top: 19px;
-   padding-left:12px;
+    margin-top: -8px;
+   padding-left:0px;
    padding-right:12px;
 }
- 
+
 .product-card
 {
   pro-detail
@@ -262,13 +262,13 @@ li .ant-menu-submenu-title .ant-menu-title-content {
 
 
 
-.navbar 
+.navbar
 {
   overflow: hidden;
   background: #269faf;
 }
 
-.navbar a 
+.navbar a
 {
   float: left;
   display: block;
@@ -281,14 +281,14 @@ li .ant-menu-submenu-title .ant-menu-title-content {
   float: right;
 }
 
-.navbar a:hover 
+.navbar a:hover
 {
   background-color: #ddd;
   color: black;
 }
 
 
-.side 
+.side
 {
   -ms-flex: 30%;
   flex: 30%;
@@ -297,7 +297,7 @@ li .ant-menu-submenu-title .ant-menu-title-content {
 }
 
 
-.sticky 
+.sticky
  {
   position: fixed;
   top: 0;
@@ -306,14 +306,14 @@ li .ant-menu-submenu-title .ant-menu-title-content {
   animation: smoothScroll 1s forwards;
  }
 
-@keyframes smoothScroll 
+@keyframes smoothScroll
 {
-  0% 
+  0%
    {
     transform: translateY(-142px);
    }
 
-  100% 
+  100%
   {
     transform: translateY(0px);
   }
@@ -330,28 +330,28 @@ li .ant-menu-submenu-title .ant-menu-title-content {
  {
   width:340px;
  }
-.rte p 
+.rte p
  {
  margin-bottom: 25px;
  }
 
 .image-slider
 {
- .swiper-button-next, .swiper-rtl .swiper-button-prev 
+ .swiper-button-next, .swiper-rtl .swiper-button-prev
    {
-    
+
     color: #b4b4b499!important;
     background-color: transparent!important;
    }
-   .swiper-button-prev, .swiper-rtl .swiper-button-next 
+   .swiper-button-prev, .swiper-rtl .swiper-button-next
    {
- 
+
     color: #b4b4b499!important;
     background-color: transparent!important;
    }
    }
-    
-    
+
+
     .filter-line
     {
     margin-top:15px;
@@ -360,7 +360,7 @@ li .ant-menu-submenu-title .ant-menu-title-content {
     position: static;
     width: 100%;
     }
-    
+
     .select-categaries
     {
     font-size: 12px;
@@ -374,7 +374,7 @@ li .ant-menu-submenu-title .ant-menu-title-content {
     height: 30px;
     background-color: #f5f5f6!important;
     border-radius: 50%;
-   
+
 }
 .search_icon-1 {
     width: 30px;
@@ -385,7 +385,7 @@ li .ant-menu-submenu-title .ant-menu-title-content {
 }
 .font-cat{
   .ant-input-affix-wrapper > input.ant-input {
-   
+
     font-size: 17px!important;
     font-weight: 600;
 }

@@ -131,8 +131,8 @@ const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
          <div className="new-header">
          <div className="pt-1 announcement">
                         <div class="announc-margin">
-                           <span class="announcement-text">Free Shipping </span>
-                           <span class="announcement-link-text"> India: Above 999 INR |  International: Above 200 USD</span>
+                           <span class="announcement-link-text">Free Shipping </span>
+                           <span class="announcement-link-text"> India: Above 999 INR |  Int: Above 200 USD</span>
                      </div>
                      </div>
 
@@ -149,12 +149,12 @@ const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
                         )}
                         topmenu={func.getCategoriesTree(topmenu)}
                      />
-                  </div>
-                  {/*<Header />*/}
+                  </div>*/}
+                  <Header />
 
 
                   <div className="w-full flex justify-between">
-                     <div className=" text-base text-right px-0 ">
+                     {/* <div className=" text-base text-right px-0 ">
                       <a href="/">
                            <img src="images/logo.png" alt="Logo" className="img-top"/>
                         </a>
@@ -171,16 +171,10 @@ const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
                           <Option value="lucy">USD</Option>
                         <Option value="tom">GBP</Option>
                      </Select>
-                     </div>
-                     <div class="site-nav">
+                     </div> */}
+                     {/* <div class="site-nav">
                      <div className="site-nav__icons">
-                     <span
-                     className="p-2 float-left cursor-pointer hover:text-brand-color"
-                     onClick={() => seTopenModalLogin(true)}
-                  >
-                     <svg aria-hidden="true" focusable="false" role="presentation" class="icon header-icon" viewBox="0 0 64 64"><path className="svg-path" d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"></path></svg>
-                  </span>
-
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon header-icon" viewBox="0 0 64 64"><path className="svg-path" d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"></path></svg>
                      </div>
                          <div className="site-nav__icons">
                           <svg aria-hidden="true" focusable="false" role="presentation" class="icon header-icon" viewBox="0 0 64 64"><path className="svg-path" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
@@ -210,7 +204,7 @@ const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
             </Link>
 
                            </div>
-                           </div>
+                           </div> */}
 
                </div>
              </div>

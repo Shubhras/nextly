@@ -1,12 +1,15 @@
-import { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from 'react';
 import AuthService from "../../../util/services/authservice";
 import { useDispatch, useSelector } from "react-redux";
 import { login_r, isAuthenticated_r, logout_r } from "../../../redux/actions";
-import { Input, Modal, Form, message, Badge } from "antd";
+import { Input, Modal, Form, message, Badge,Select } from "antd";
 import router from "next/router";
 import Link from "next/link";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
+import dynamic from "next/dynamic";
+const { Option } = Select;
+const CategoriesMenu = dynamic(() => import("../../components/CategoriesMenu"));
 import {
    UserOutlined,
    ShoppingOutlined,
@@ -79,22 +82,16 @@ const Default = () => {
    }, [isAuthenticated]);
 
    return (
-       
 
-      <div className="w-full flex justify-between pt-6">
-         <div className=" w-3/12 mr-3 md:w-2/12 md:mr-0  mt-4 md:mt-2 lg:mt-3">
-            <a href="/">
-               <img
-                  src={`${IMG_URL + settings.image}`}
-                  width="169"
-                  height="44"
-                  className=" w-full sm:w-10/12 sm:mt-0 mt-3  "
-                  alt="Logo"
-               />
-            </a>
-         </div>
-         <div className=" flex-auto  w-3/12 mr-3 md:w-auto md:mr-0    mt-6  px-0 sm:px-12">
-            {/*<Input.Search
+
+      <div className="w-full flex justify-between">
+        <div className=" text-base text-right px-0 ">
+                      <a href="/">
+                           <img src="images/logo.png" alt="Logo" className="img-top"/>
+                        </a>
+                     </div>
+                     <div className=" flex-auto  w-3/12 mr-3 md:w-auto md:mr-0    mt-6  px-0 sm:px-12">
+            <Input.Search
                size="middle"
                placeholder="Search..."
                enterButton
@@ -104,18 +101,30 @@ const Default = () => {
                onSearch={(val) => {
                   router.push("/search?&text=" + val);
                }}
-            />*/}
-            
+            />
          </div>
-         <div className=" mt-5   text-base text-right px-0  ">
+                     <div className=" mt-1 flex-auto  w/-12  md:w-auto md:mr-0  px-0 sm:px-4">
+                       <div className="header-height">
+                        <CategoriesMenu />
+                       </div>
+                     </div>
+                     <div className="text-base text-right px-0 mt-3" >
+                     <Select style={{height: 32 , fontSize: 13}} placeholder="INR" filterOption={(input, option) =>
+                        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}>
+                          <Option value="jack">INR</Option>
+                          <Option value="lucy">USD</Option>
+                        <Option value="tom">GBP</Option>
+                     </Select>
+                     </div>
+         <div className=" mt-5 site-nav  text-base text-right px-0  ">
             {stateisAuthenticated ? (
                <>
-                  <Link href="/profile">
+                  {/* <Link href="/profile">
                      <span className="p-2 float-left cursor-pointer hover:text-brand-color">
                         <UserOutlined />
                         <span className="hidden md:inline "> Profile</span>
                      </span>
-                  </Link>
+                  </Link> */}
                   <span
                      className="p-2 float-left cursor-pointer hover:text-brand-color"
                      onClick={async () => {
@@ -136,14 +145,19 @@ const Default = () => {
                      className="p-2 float-left cursor-pointer hover:text-brand-color"
                      onClick={() => seTopenModalLogin(true)}
                   >
-                     <UserOutlined /> 
+
+                      <div className="site-nav__icons">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon header-icon" viewBox="0 0 64 64"><path className="svg-path" d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"></path></svg>
+                     </div>
                      {/*<span className="hidden md:inline ">Login</span>*/}
                   </span>
                   <span
                      className="p-2 float-left cursor-pointer hover:text-brand-color"
                      onClick={() => seTopenModalSignup(true)}
                   >
-                     <SearchOutlined />{" "}
+                       <div className="site-nav__icons">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon header-icon" viewBox="0 0 64 64"><path className="svg-path" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
+                        </div>
                      {/*<span className="hidden md:inline ">Sign Up</span>*/}
                   </span>
                </>
@@ -166,8 +180,10 @@ const Default = () => {
                   ) : (
                      ""
                   )}
+                        <div className="site-nav__icons">
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon header-icon" viewBox="0 0 64 64"><g fill="none" stroke="#000" stroke-width="4"><path d="M25 26c0-15.79 3.57-20 8-20s8 4.21 8 20"></path><path d="M14.74 18h36.51l3.59 36.73h-43.7z"></path></g></svg>
+                        </div>
 
-                  <ShoppingOutlined/>
                   {/*<span className="hidden md:inline "> Basket</span>*/}
                </a>
             </Link>
@@ -179,8 +195,8 @@ const Default = () => {
          </div>
          <div className="text-center w-10/12 mr-3 md:w-10/12 md:mr-0  mt-4 md:mt-2 lg:mt-3">
            <a href="/">
-               
-            
+
+
             <h1>Luxury Fashion</h1>
             </a>
          </div>
