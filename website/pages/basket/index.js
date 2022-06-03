@@ -13,7 +13,7 @@ const Page = () => {
         <Head title = "Basket" / >
         <div className = " col-span-12 lg:col-span-9 shadow-lg m-0 sm:m-4 grid-cols-2 my-8 gap-9  bg-white" >
         <BasketList / >
-        </div> 
+        </div>
         <div className = " col-span-12 lg:col-span-3 shadow-lg m-0 sm:m-4  grid-cols-2 bg-white my-8 gap-9" >
         <DetailPrice / >
         </div> < /div >
