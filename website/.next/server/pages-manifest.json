@@ -1,0 +1,20 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/basket/address": "pages/basket/address.js",
+  "/basket": "pages/basket.js",
+  "/basket/payment": "pages/basket/payment.js",
+  "/basket/paymentokey": "pages/basket/paymentokey.js",
+  "/content/[seo]": "pages/content/[seo].js",
+  "/forgotpassword": "pages/forgotpassword.js",
+  "/": "pages/index.js",
+  "/product/[seo]": "pages/product/[seo].js",
+  "/profile/address": "pages/profile/address.js",
+  "/profile": "pages/profile.js",
+  "/profile/orders": "pages/profile/orders.js",
+  "/resetpassword": "pages/resetpassword.js",
+  "/search": "pages/search.js",
+  "/signin": "pages/signin.js",
+  "/sitemap.xml": "pages/sitemap.xml.js"
+}
