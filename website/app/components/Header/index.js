@@ -91,7 +91,7 @@ const Default = () => {
                         </a>
                      </div>
                      <div className=" flex-auto  w-3/12 mr-3 md:w-auto md:mr-0    mt-6  px-0 sm:px-12">
-            <Input.Search
+            {/*<Input.Search
                size="middle"
                placeholder="Search..."
                enterButton
@@ -101,7 +101,7 @@ const Default = () => {
                onSearch={(val) => {
                   router.push("/search?&text=" + val);
                }}
-            />
+            />*/}
          </div>
                      <div className=" mt-1 flex-auto  w/-12  md:w-auto md:mr-0  px-0 sm:px-4">
                        <div className="header-height">
