@@ -5,7 +5,7 @@ const jsonConfig = {
     //WEBSITE_URL: "https://nextly.shop",
     //IMG_URL: "https://backend.nextly.shop",
     API_URL: "http://139.59.83.155:4002",
-    WEBSITE_URL: "http://139.59.83.155:3001",
+    WEBSITE_URL: "http://139.59.83.155:8001",
     IMG_URL: "http://139.59.83.155:4002",
 
     maillerConfig: {
