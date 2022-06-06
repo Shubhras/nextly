@@ -197,6 +197,9 @@ router
   .post(passport.authenticate("jwt", { session: false }), (req, res) => {
     const rolesControl = req.user.role;
     if (rolesControl[roleTitle + "/id"]) {
+      if(req.body.visible){
+        req.body.isActive=req.body.visible;
+      }
       Categories.findByIdAndUpdate(req.params.id, req.body)
         .then(() =>
           res.json({
